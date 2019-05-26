@@ -5,15 +5,19 @@ import Introduction from '../components/introduction/Introduction';
 require('typeface-great-vibes')
 
 const Container = styled.div`
+  background-color: green;
+
   & .title {
-    font-family: typeface-great-vibes;
+    font-family: Great Vibes;
+    font-size: 70px;
+    padding: 50px;
   }
 `;
 
 const App = () => {
   return (
     <Container className="app">
-      <div className="title">Bishop and Polden</div>
+      <div className="title">Bishop & Polden</div>
       <Navigation className="nav" />
       <Introduction className="intro" />
     </Container>
