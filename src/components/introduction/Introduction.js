@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
-  grid-area: intro;
-  text-align: center;
-  left: 50%;
-  top: 50%;
+const StyledIntroduction = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 const Introduction = () => {
   return (
-    <Container className="intro">
-      Flowers
-    </Container>
+    <StyledIntroduction className="intro">
+      <img src={process.env.PUBLIC_URL + '/frontpage.png'} />
+    </StyledIntroduction>
   );
 };
 

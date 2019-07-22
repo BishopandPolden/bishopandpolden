@@ -1,20 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
-  grid-area: nav;
-  text-align: center;
+const StyledNavigation = styled.div`
+
 `;
 
 const Navigation = () => {
   return (
-    <Container className="nav">
+    <StyledNavigation className="nav">
       <a href="/about-us">About Us</a>
       <a href="/weddings">Weddings</a>
-      <a href="/events">Events</a>
+      <a href="/gallery">Gallery</a>
+      <a href="/testimonials">Testimonials</a>
       <a href="/contact-us">Contact Us</a>
-      <a href="/blog">Blog</a>
-    </Container>
+    </StyledNavigation>
   );
 };
 
